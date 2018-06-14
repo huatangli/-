@@ -1,0 +1,63 @@
+<view class="imgs_container">
+
+   <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" confirm-type='search' placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0 && inputHiden}}" >
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active" wx:for="{{arrayCopy}}" data-index="{{index}}" bindtap='click_navigator' hidden="{{!inputShowed}}">
+                <view class="weui-cell__bd" >
+                    <view >{{item}}</view>
+                </view>
+            </navigator>
+           
+        </view>
+    </view>
+ 
+
+  <view class="btn btn_left">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker" bindtap='click_picker'>
+        <!-- 地区 {{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}} {{multiArray[2][multiIndex[2]]}} -->
+        <view wx:if="{{multiArray.length == 1}}">{{multiArray[0][multiIndex[0]]}} </view>
+        <view wx:if="{{multiArray.length == 2}}">{{multiArray[0][multiIndex[0]]}} </view>
+        <view wx:if="{{multiArray.length == 3}}">{{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}} </view>
+        <view wx:if="{{multiArray.length == 4}}">{{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}} {{multiArray[2][multiIndex[2]]}} </view>
+
+      </view>
+    </picker>
+  </view>
+  <view class="img_box">
+    <view>
+      <image animation="{{animationData5}}" src="{{activePic}}" mode="aspectFit" class='img_main'></image>
+    </view>
+  </view>
+  <view class="pages">{{activeIndex5}} / {{length}}</view>
+  <view class="btn_group">
+    <view class="btn btn_left" bindtap="pre5">上一张</view>
+    <view class="btn btn_right" bindtap="next5">下一张</view>
+  </view>
+
+  <view class="example">
+    <view class="marquee_box">
+      <view class="btn btn_center" style="{{orientation}}:{{marqueeDistance2}}px;font-size: {{size}}px;">
+        <text>设备 {{text}}</text>
+        <text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{text}}</text>
+      </view>
+    </view>
+  </view>
+  <button class='close' bindtap='closeAll'>关闭</button>
+</view>

@@ -1,0 +1,32 @@
+/**app.wxss**/
+@import "/components/libs/font-awesome/font-awesome.wxss";
+@import "/components/libs/weui/weui.wxss";
+@import "/components/weapp/index.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.body {
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    min-height: 100%;
+    font-size: 32rpx;
+    color: #333;
+}
+
+.wrapper {
+    padding: 0 50rpx;
+}
+
+.ft-center {
+    text-align: center;
+}
+
+.ft-warn {
+    font-weight: 600;
+    color: #d23f31;
+}

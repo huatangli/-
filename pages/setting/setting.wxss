@@ -1,0 +1,10 @@
+/* pages/setting/setting.wxss */
+.link1 input{
+  border: 1px solid #D2D2CA;
+  margin-bottom: 10rpx;
+  
+}
+.link2 input{
+  border: 1px solid #D2D2CA;
+  margin-bottom: 10rpx;
+}

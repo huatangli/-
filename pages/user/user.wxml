@@ -1,0 +1,36 @@
+<!-- <view wx:if="{{!memberId}}" catchtap="toLogin" class="toLogin"></view> -->
+<view class="list_box">
+
+ <navigator url="/pages/problem/problem">
+  <view class="li">
+    <text class="title">常见问题</text>
+    <text class="right_icon"></text>
+  </view>
+  </navigator>
+
+  <view class="li" bindtap='call'>
+    <text class="title">联系客服</text>
+    <text class="right_icon"></text>
+  </view>
+
+  <view class="li" bindtap='clear'>
+    <text class="title">清除缓存</text>
+    <text class="right_icon"></text>
+  </view>
+
+  <navigator url="/page/reserveList/index">
+  <view class="li" bindtap='aboutUs'>
+    <text class="title">关于我们</text>
+    <text class="right_icon"></text>
+  </view>
+  </navigator>
+   
+  <navigator url="../../pages/login/login" open-type="redirect">
+  <view class="li_button"><button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="li_button"> 退出登录 </button></view>
+  </navigator>
+
+</view>
+
+
+

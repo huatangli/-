@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/pictures/pictures",    
+    "pages/login/login",    
+    "pages/view/view",
+    "pages/setting/setting",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/problem/problem"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "海威光电",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#6ED4BD",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/pictures/pictures",
+        "text": "首页",
+        "iconPath": "images/tabBar/iconfont-home.png",
+        "selectedIconPath": "images/tabBar/iconfont-home-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tabBar/iconfont-user.png",
+        "selectedIconPath": "images/tabBar/iconfont-user-active.png"
+      }
+    ]
+  }
+}

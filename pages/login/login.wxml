@@ -1,0 +1,8 @@
+
+<!--index.wxml-->
+<view class="body wrapper">
+    <image class="logo" src="../../images/login/icon@2x6.png"></image>
+    <input class="input1" name="userName" bindinput="userInputEvent" placeholder="用户名" value='{{userName}}'/>
+    <input password name="password" bindinput="pwdInputEvent" placeholder="密码" value='{{pwd}}'/>
+    <button type="primary" form-type="submit" bindtap='login'>登录</button>
+</view>

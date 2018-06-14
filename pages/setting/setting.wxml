@@ -1,0 +1,16 @@
+<!--pages/setting/setting.wxml-->
+<view class='content'>
+  <view class='link1'>
+    <input placeholder="wss//118.36.46:6002" focus="{{focus}}" />
+  </view>
+  <view class='link2'>
+    <input placeholder="wss//118.36.46:6002" focus="{{focus}}" />
+  </view>
+  <view class='save'>
+    <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 保存配置 </button>
+        <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="getCode"> 获取code </button>
+  </view>
+</view>
+

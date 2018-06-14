@@ -1,0 +1,40 @@
+/* pages/view/view.wxss */
+.content{
+  width: 100%;
+  height: 100%;
+  /* background-image: url("../../images/fj.png"); */
+}
+.bk image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.h_image{
+  display: flex;
+  justify-content: center;
+}
+.h_image image{
+   width:750rpx;
+   height:562.5rpx;
+   position: relative;
+   
+}
+.section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.h_switch{
+   position: relative;
+   top: 50rpx;
+
+   
+}
+.section button{
+   width: 600rpx;
+   position: relative;
+   top: 50rpx;
+}
+.lll{
+  margin-top: 50rpx;
+}
